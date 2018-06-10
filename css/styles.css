@@ -1,7 +1,13 @@
 body {
+    font-family: 'Karla', sans-serif;
+
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
 }
 
 .nav {
@@ -10,6 +16,7 @@ body {
 
     width: 80%;
     margin: 25px 0 0 auto;
+    padding: 0;
 
     background-color: rgb(111, 2, 33);
     font-family: 'Karla', sans-serif;
@@ -27,36 +34,96 @@ body {
     color: black;
 }
 
-.splash-container {
+#image-holder {
+    position: relative;
+}
+.home-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#homepage-footer {
+    position: absolute;
+    bottom: 0;
+    height: 15px;
+    
+    background-color: rgb(111, 2, 33);
+}
+
+
+.home-container {
     display: inline-block;
     position: absolute;
-    right: 15px;
-
-    margin: 15px auto;
+    right: 20px;
+    margin: 20px 0;
     text-align: center;
 }
 
 .lvc-header {
     font-family: 'Merriweather', serif;
     font-size: 1.8em;
+
+    margin: 0;
+    padding: 0;
 }
 
 .lvc-header h1 {
     font-weight: lighter;
 
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
 .lvc-byline {
     font-family: 'Karla', sans-serif;
     font-size: 1.5em;
+
+    margin: 8px 0;
+    padding: 0;
 }
 
 .lvc-byline h2 {
     font-weight: lighter;
     margin: 0 auto;
     padding: 0;
+}
+
+#current-news {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgb(196, 211, 221);
+}
+
+.news-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.news-list li {
+    margin: 5px;
+    padding: 0;
+}
+
+.news-list li p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* utility types */
+
+.vl {
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, .5);
 }
 .gold-type {
     color: #ba7f51;
