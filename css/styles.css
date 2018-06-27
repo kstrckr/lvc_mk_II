@@ -1,3 +1,17 @@
+/*VISIBILITY FOR RETREATS AND CLASSES*/
+
+.beginners-class {
+
+}
+
+.displayed {
+    display: block;
+}
+
+.not-displayed {
+    display: none;
+}
+
 body {
     font-family: 'Karla', sans-serif;
 
