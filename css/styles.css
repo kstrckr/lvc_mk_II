@@ -2,7 +2,7 @@ body {
     font-family: 'Karla', sans-serif;
 
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
     padding: 0;
 }
 
@@ -215,4 +215,8 @@ p {
 
 .blue-type {
     color: #3b6e8f;
+}
+
+.current-link a{
+    text-decoration: underline;
 }
