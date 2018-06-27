@@ -157,6 +157,7 @@ p {
     flex-grow: 1;
     background-color: #f1e5c8;
     margin: -100px 0 -60px 0;
+    max-width: 250px;
     padding: 0;
     z-index: -1;
     text-align: right;
