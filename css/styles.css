@@ -179,6 +179,14 @@ p {
 }
 /* Right Content------------------------- */
 
+.book-list dd {
+    font-style: italic;
+}
+
+.book-list dd::before {
+    content: "- ";
+}
+
 /*-------------------------End Right Content */
 
 /* Standard Footer------------------------- */
