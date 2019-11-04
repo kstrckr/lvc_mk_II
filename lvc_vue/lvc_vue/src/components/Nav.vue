@@ -2,12 +2,12 @@
 <ul class='nav'>
   <li>
     <h4 class="current-link">
-      <a href="./index.html">Home</a>
+      <router-link to="/">Home</router-link>
     </h4>
   </li>
   <li>
     <h4>
-      <a href="./whatis.html">What is Insight Meditation</a>
+      <router-link to="/about_vipassana">What is Insight Meditation</router-link>
     </h4>
   </li>
   <li>

@@ -30,6 +30,6 @@ export default Vue.extend({
 #about-us {
     display: block;
     background: #fff;
-    padding: 1% 5%;
+    padding: 0 5%;
 }
 </style>
