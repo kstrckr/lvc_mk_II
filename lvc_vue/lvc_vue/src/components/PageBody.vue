@@ -1,9 +1,14 @@
 <template>
 <div class="page-body">
-  <PageTitle :title='title' />
+  <PageTitle :title='pageData.title' />
   <ul>
-    <li v-for='entry in pageEntries' v-bind:key='entry'>
-
+    <li v-for='entry in pageData.data' v-bind:key='entry.index'>
+      <p v-if='entry.sectionHeading.length'>{{ entry.sectionHeading }}</p>
+      <ul>
+        <li v-for='paragraph in entry.sectionParagraphs' v-bind:key='paragraph'>
+          <p>{{ paragraph }}</p>
+        </li>
+      </ul>
     </li>
   </ul>
 </div>
@@ -13,14 +18,15 @@
 import Vue from 'vue'
 import PageTitle from '@/components/PageTitle.vue'
 
+import IPageData from '@/pageData/IPageData'
+
 export default Vue.extend({
   name: 'PageBody',
   components: {
     PageTitle
   },
   props: {
-    title: String,
-    pageEntries: Array
+    pageData: Object as () => IPageData
   }
 })
 </script>
