@@ -1,5 +1,5 @@
 <template>
-  <div class="left-sidebar">
+  <div id="left-sidebar">
     <div id="left-content">
       <img src="../../images/photo_flowerandfeet.png" alt="sitting buddha statue">
       <p>{{ quote.text }}</p>
@@ -27,7 +27,6 @@ export default Vue.extend({
 @import "../global_styling/globals.less";
 
 #left-content {
-  flex-grow: 1;
   background-color: @body-gold;
   margin: 0;
   max-width: 250px;

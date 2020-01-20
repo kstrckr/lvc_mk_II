@@ -28,6 +28,7 @@ export default Vue.extend({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: @body-font;
+  position: relative;
 
   max-width: 900px;
   margin: 0 auto 15px auto;

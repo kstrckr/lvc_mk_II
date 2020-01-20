@@ -1,6 +1,7 @@
 <template>
-  <div class="standard-content-container">
+  <div id="standard-content-container">
     <LeftSidebar />
+    <PageBody :title='tempTitle' />
   </div>
 </template>
 
@@ -8,10 +9,18 @@
 import Vue from 'vue'
 
 import LeftSidebar from '@/components/LeftSidebar.vue'
+import PageBody from '@/components/PageBody.vue'
+
 export default Vue.extend({
   name: 'AboutVipassana',
   components: {
-    LeftSidebar
+    LeftSidebar,
+    PageBody
+  },
+  data () {
+    return {
+      tempTitle: 'Page Header Here'
+    }
   }
 })
 </script>

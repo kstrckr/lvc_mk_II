@@ -41,7 +41,10 @@ export default Vue.extend({
   display: flex;
   justify-content: space-around;
 
+  position:absolute;
+  right: 0;
   width: 75%;
+  width: 675px;
   margin: 25px 0 0 auto;
   padding: 0;
 
