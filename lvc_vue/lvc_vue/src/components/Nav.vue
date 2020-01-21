@@ -12,7 +12,7 @@
   </li>
   <li>
     <h4>
-      <a href="./cdlled.html">CDL Led</a>
+      <router-link to="/cdl_led">CDL Led</router-link>
     </h4>
   </li>
   <li>
@@ -22,7 +22,7 @@
   </li>
   <li>
     <h4>
-      <a href="./edu.html">Classes & Retreats</a>
+      <router-link to="/retreats">Classes & Retreats</router-link>
     </h4>
   </li>
 </ul>

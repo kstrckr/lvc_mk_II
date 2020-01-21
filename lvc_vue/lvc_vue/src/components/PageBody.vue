@@ -1,12 +1,12 @@
 <template>
 <div class="page-body">
   <PageTitle :title='pageData.title' />
-  <ul>
-    <li v-for='entry in pageData.data' v-bind:key='entry.index'>
-      <p v-if='entry.sectionHeading.length'>{{ entry.sectionHeading }}</p>
-      <ul>
-        <li v-for='paragraph in entry.sectionParagraphs' v-bind:key='paragraph'>
-          <p>{{ paragraph }}</p>
+  <ul class="page-content">
+    <li class="page-sections" v-for='entry in pageData.data' v-bind:key='entry.index'>
+      <p class="section-heading red-type" v-if='entry.sectionHeading.length'>{{ entry.sectionHeading }}</p>
+      <ul class="section-paragraphs">
+        <li class="paragraph" v-for='paragraph in entry.sectionParagraphs' v-bind:key='paragraph'>
+          <p class="paragraph-text"><span v-html="paragraph"></span></p>
         </li>
       </ul>
     </li>
@@ -32,7 +32,41 @@ export default Vue.extend({
 </script>
 
 <style lang="less">
+@import "../global_styling/globals.less";
+
 .page-body {
-  margin: 80px 0 0 30px;
+  margin: 100px 0 0 30px;
+  padding: 0 0;
+}
+
+.page-content {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.page-sections {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.section-heading {
+  margin: 0 0;
+  padding: 0 0;
+  font-weight: bold;
+}
+
+.section-paragraphs {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.paragraph {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.paragraph-text {
+  // margin: 0 0;
+  // padding: 0 0;
 }
 </style>

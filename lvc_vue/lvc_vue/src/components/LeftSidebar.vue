@@ -33,6 +33,7 @@ export default Vue.extend({
   padding: 0;
   z-index: -1;
   text-align: right;
+  height: 100%;
 
   img {
     margin: 0;
